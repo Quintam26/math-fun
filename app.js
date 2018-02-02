@@ -25,15 +25,13 @@ the values that were input into the function:
 "The sum of 4 and 7 is 11."
 */
 
-// Write your code here
-blanck code to see git flow
-function sum(num,num2){ //eslint-disable-line
+///Write your code here
+/*function sum(num,num2){ //eslint-disable-line
     const numSum = num + num2;
     return [numSum, 'The sum of ' + num + ' and ' + num2 + ' is ' + numSum + '.'];
 }
-
-// Here is the test for sum(); uncomment it to run it
 testSum();
+*/
 
 
 
@@ -51,11 +49,16 @@ were input into the function:
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
+    const sumMultiply = a * b;
+    return [sumMultiply,'The product of ' +  a  + ' and ' + b + ' is ' + sumMultiply + '.'];
 
 }
 
+testMultiply();
+
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply();
+//'The product of ' +  a  + ' and ' + b + ' is ' + sumMultiply + '.'
 
 
 /////////////////////////////////////

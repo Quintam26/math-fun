@@ -26,6 +26,7 @@ the values that were input into the function:
 */
 
 // Write your code here
+blanck code to see git flow
 function sum(num,num2){ //eslint-disable-line
     const numSum = num + num2;
     return [numSum, 'The sum of ' + num + ' and ' + num2 + ' is ' + numSum + '.'];

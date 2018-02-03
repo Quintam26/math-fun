@@ -86,10 +86,13 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-    const smAll = sum (a,b);
-    sum (smAll,c);
-    
-    return[smAll,];
+    const aAndBArray = sum(a,b);
+    const aplusB = aAndBArray[0];
+   
+    const totalSumArray = sum(aplusB,c);
+    const aPlusBplusC = totalSumArray[0];
+
+    return aPlusBplusC;
 }
 
 testSumAndMultiply(4,7,5);

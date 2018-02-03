@@ -92,7 +92,13 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
     const totalSumArray = sum(aplusB,c);
     const aPlusBplusC = totalSumArray[0];
 
-    return aPlusBplusC;
+    const mAndBarray = multiply(a,b);
+    const amultiplyb = mAndBarray[0];
+
+    const totalMultiplyArray = multiply(amultiplyb,c);
+    const aMultiplybMultiplyC = totalMultiplyArray[0];
+
+    return [aPlusBplusC, aMultiplybMultiplyC];
 }
 
 testSumAndMultiply(4,7,5);

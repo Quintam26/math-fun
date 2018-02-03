@@ -88,7 +88,7 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 function sumAndMultiply(a,b,c){ //eslint-disable-line
     const aAndBArray = sum(a,b);
     const aplusB = aAndBArray[0];
-   
+
     const totalSumArray = sum(aplusB,c);
     const aPlusBplusC = totalSumArray[0];
 
@@ -98,12 +98,13 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
     const totalMultiplyArray = multiply(amultiplyb,c);
     const aMultiplybMultiplyC = totalMultiplyArray[0];
 
-    return [aPlusBplusC, aMultiplybMultiplyC,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
+    return [aPlusBplusC, aMultiplybMultiplyC,a + ' and ' + b + ' and ' + c + ' sum to ' + aPlusBplusC + '.,The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + aMultiplybMultiplyC + '.'];
 }
 
 testSumAndMultiply(4,7,5);
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+// testSumAndMultiply(4,7,5);eslint .
+
 
 
 /////////////////////////////////////

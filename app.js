@@ -49,7 +49,7 @@ were input into the function:
 
 // Write your code here
 
-function multiply(a,b){ //eslint-disable-line
+/*function multiply(a,b){ //eslint-disable-line
     const sumMultiply = a * b;
     return [sumMultiply,'The product of ' +  a  + ' and ' + b + ' is ' + sumMultiply + '.'];
 }
@@ -85,7 +85,7 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 */
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
+/*function sumAndMultiply(a,b,c){ //eslint-disable-line
     const aAndBArray = sum(a,b);
     const aplusB = aAndBArray[0];
 
@@ -130,8 +130,16 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 // Write your code here
 
 function sumArray(testArray){ //eslint-disable-line
+    for (i = 0; i < testArray.length; i++) {
+   
+        testArray = [2, 3, 4];
+        const GT = sum(testArray[0], testArray[1][0]);
+        const TP = sum(GT,testArray[2][0]);
 
+        return [TP];
+    }
 }
+testSumArray();
 
 // Here is the test for sumArray(); uncomment it to run it
 // testSumArray();

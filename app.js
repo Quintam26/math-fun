@@ -32,10 +32,6 @@ function sum(a,b){ //eslint-disable-line
 }
 testSum();
 
-
-
-
-
 /////////////////////////////////////
 /*Problem 2
 Write a function called multiply() that takes in two numbers
@@ -49,7 +45,7 @@ were input into the function:
 
 // Write your code here
 
-/*function multiply(a,b){ //eslint-disable-line
+function multiply(a,b){ //eslint-disable-line
     const sumMultiply = a * b;
     return [sumMultiply,'The product of ' +  a  + ' and ' + b + ' is ' + sumMultiply + '.'];
 }
@@ -82,10 +78,10 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
     use your multiply() function.
 
 IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
-*/
+
 
 // Write your code here
-/*function sumAndMultiply(a,b,c){ //eslint-disable-line
+*/function sumAndMultiply(a,b,c){ //eslint-disable-line
     const aAndBArray = sum(a,b);
     const aplusB = aAndBArray[0];
 
@@ -102,7 +98,7 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 }
 
 testSumAndMultiply(4,7,5);
-// Here is the test for sumAndMultiply(); uncomment it to run it
+ /*Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);eslint .
 
 
@@ -130,15 +126,14 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 // Write your code here
 
 function sumArray(testArray){ //eslint-disable-line
-    for (i = 0; i < testArray.length; i++) {
-   
-        testArray = [2, 3, 4];
-        const GT = sum(testArray[0], testArray[1][0]);
-        const TP = sum(GT,testArray[2][0]);
 
-        return [TP];
-    }
+    testArray = [2, 3, 4];
+    const GT = sum(testArray[0], testArray[1])[0];
+    const TP = sum(GT, testArray[2])[0];
+
+    return [TP, testArray + ' was passed in as an array of numbers, and ' + TP + ' is their sum.'];
 }
+
 testSumArray();
 
 // Here is the test for sumArray(); uncomment it to run it

@@ -127,7 +127,6 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 function sumArray(testArray){ //eslint-disable-line
 
-    testArray = [2, 3, 4];
     const GT = sum(testArray[0], testArray[1])[0];
     const TP = sum(GT, testArray[2])[0];
 
@@ -167,7 +166,6 @@ new branch for your work on the next question!
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
 
-    testArray = [2, 3, 4];
     const MH = multiply(testArray[0], testArray[1])[0];
     const HM = multiply(MH, testArray[2])[0];
 
